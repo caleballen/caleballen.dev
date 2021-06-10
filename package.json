@@ -2,7 +2,7 @@
   "name": "caleballen.dev",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://caleballen.github.com/caleballen.dev",
+  "homepage": "https://caleballen.dev",
   "dependencies": {
     "@testing-library/jest-dom": "^5.13.0",
     "@testing-library/react": "^11.2.7",
