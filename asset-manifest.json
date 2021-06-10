@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/caleballen.dev/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/caleballen.dev/static/js/main.b9a82442.chunk.js",
+    "main.js.map": "/caleballen.dev/static/js/main.b9a82442.chunk.js.map",
+    "runtime-main.js": "/caleballen.dev/static/js/runtime-main.0aea435d.js",
+    "runtime-main.js.map": "/caleballen.dev/static/js/runtime-main.0aea435d.js.map",
+    "static/js/2.e816a103.chunk.js": "/caleballen.dev/static/js/2.e816a103.chunk.js",
+    "static/js/2.e816a103.chunk.js.map": "/caleballen.dev/static/js/2.e816a103.chunk.js.map",
+    "static/js/3.e3dbc57b.chunk.js": "/caleballen.dev/static/js/3.e3dbc57b.chunk.js",
+    "static/js/3.e3dbc57b.chunk.js.map": "/caleballen.dev/static/js/3.e3dbc57b.chunk.js.map",
+    "index.html": "/caleballen.dev/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/caleballen.dev/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.e816a103.chunk.js.LICENSE.txt": "/caleballen.dev/static/js/2.e816a103.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/caleballen.dev/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0aea435d.js",
+    "static/js/2.e816a103.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.b9a82442.chunk.js"
+  ]
+}
