@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+
+  --color1: #545E75;
+  --color2: #F2F4F3;
+  --color3: #519E8A;
+  --color4: #E55934;
+  --color5: #FA7921;
+  --color6: #230903;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: calc(10px + 2vmin);
+    color: white;
+
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.header {
+  display: inline-flex;
+  padding: 0.5rem 0.5rem 0.5rem 4rem;
+  position: sticky;
+  top:0;
+  width: 100%;
+  background-color: var(--color2);
+  font-size: calc(10px + 2vmin);
+  color: var(--color1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation-section {
+  padding-left: 4rem;
+  flex: 1;
+  display: inline-flex;
+  justify-content: right;
+}
+
+.navigation-item {
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  transition: 0.3s ease;
+}
+
+.navigation-item:hover{
+  background: rgba(0,0,0,0.2);
+} 
+
+.card {
+  display: inline-flex;
+  flex-direction: row;
+  height: 80vh;
+  width: 100%;
+}
+
+.card > .text {
+  flex: 1;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.card > .image-container {
+  flex: 1;
+  margin: auto;
+}
+.card .image-container .image {
+  object-fit: cover;
+  max-height: 80vh;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:nth-child(even){
+  background-color: var(--color1);
+}
+.card:nth-child(odd){
+  background-color: var(--color2);
+  flex-direction: row-reverse;
+  color: var(--color1)
 }

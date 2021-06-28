@@ -18,6 +18,8 @@ module.exports = {
     'react',
   ],
   rules: {
-    'linebreak-style': ['warn'],
+    'linebreak-style': ['error'],
+    'no-tabs': ['error', { allowIndentationTabs: true }],
+    'react/prop-types': ['warn'],
   },
 };
