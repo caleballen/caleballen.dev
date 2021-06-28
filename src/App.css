@@ -19,7 +19,6 @@
     justify-content: center;
     
     font-size: calc(10px + 2vmin);
-    color: white;
 
     text-align: center;
 }
@@ -29,6 +28,7 @@
   display: inline-flex;
   padding: 0.5rem 0.5rem 0.5rem 4rem;
   position: sticky;
+  z-index: 1;
   top:0;
   width: 100%;
   background-color: var(--color2);
@@ -36,53 +36,57 @@
   color: var(--color1);
 }
 
-.navigation-section {
+.header .navigation-section {
   padding-left: 4rem;
   flex: 1;
   display: inline-flex;
   justify-content: right;
 }
 
-.navigation-item {
+.header .navigation-item {
   border-radius: 0.5rem;
   width: fit-content;
   padding: 0.5rem 2rem 0.5rem 2rem;
   transition: 0.3s ease;
 }
 
-.navigation-item:hover{
+.header .navigation-item:hover{
   background: rgba(0,0,0,0.2);
-} 
+}
 
-.card {
-  display: inline-flex;
-  flex-direction: row;
+.parallax-image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.parallax-image:nth-of-type(even) > .paragraph-text {
+  background-color: var(--color1);
+}
+.parallax-image:nth-of-type(odd) > .paragraph-text {
+  background-color: var(--color2);
+  color: var(--color1)
+}
+
+
+.background-image {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.background-image {
   height: 80vh;
   width: 100%;
 }
 
-.card > .text {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card > .image-container {
-  flex: 1;
-  margin: auto;
-}
-.card .image-container .image {
-  object-fit: cover;
-  max-height: 80vh;
+.paragraph-text {
   width: 100%;
 }
 
-.card:nth-child(even){
-  background-color: var(--color1);
-}
-.card:nth-child(odd){
-  background-color: var(--color2);
-  flex-direction: row-reverse;
-  color: var(--color1)
-}
+

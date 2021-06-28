@@ -11,13 +11,11 @@ const HeaderItem = ({ text, targetSection }) => {
 
 const Header = () => (
   <div className="header">
-    <>
-      <HeaderItem text="caleballen.dev" targetSection="" />
-      <div className="navigation-section">
-        <HeaderItem text="dab" targetSection="dab" />
-        <HeaderItem text="dab2" targetSection="dab" />
-      </div>
-    </>
+    <HeaderItem text="caleballen.dev" targetSection="" />
+    <div className="navigation-section">
+      <HeaderItem text="dab" targetSection="dab" />
+      <HeaderItem text="dab2" targetSection="dab" />
+    </div>
   </div>
 );
 
