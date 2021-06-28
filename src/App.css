@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+
+  --color1: #545E75;
+  --color2: #F2F4F3;
+  --color3: #519E8A;
+  --color4: #E55934;
+  --color5: #FA7921;
+  --color6: #230903;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: calc(10px + 2vmin);
+
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+.header {
+  display: inline-flex;
+  padding: 0.5rem 0.5rem 0.5rem 4rem;
+  position: sticky;
+  z-index: 1;
+  top:0;
+  width: 100%;
+  background-color: var(--color2);
+  font-size: calc(10px + 2vmin);
+  color: var(--color1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header .navigation-section {
+  padding-left: 4rem;
+  flex: 1;
+  display: inline-flex;
+  justify-content: right;
+}
+
+.header .navigation-item {
+  border-radius: 0.5rem;
+  width: fit-content;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  transition: 0.3s ease;
+}
+
+.header .navigation-item:hover{
+  background: rgba(0,0,0,0.2);
+}
+
+.parallax-image{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.parallax-image:nth-of-type(even) > .paragraph-text {
+  background-color: var(--color1);
+}
+.parallax-image:nth-of-type(odd) > .paragraph-text {
+  background-color: var(--color2);
+  color: var(--color1)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.background-image {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: none;
+  background-size: cover;
 }
+
+.background-image {
+  height: 80vh;
+  width: 100%;
+}
+
+.paragraph-text {
+  width: 100%;
+}
+
+

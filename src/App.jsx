@@ -1,18 +1,20 @@
+/* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
 import './App.css';
 import React from 'react';
+import ParallaxImage from './ParallaxImage';
+import Header from './Header';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          there's nothing here at the moment.
-        </p>
-        <p>☁</p>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <div className="app">
+    <Header />
+    <ParallaxImage
+      caption="java"
+      text="I wrote some netty code"
+      image="java-server-code.png"
+    />
+    <ParallaxImage id="dab" text="dab" image="coffee.jpg" />
+  </div>
+);
 
 export default App;
