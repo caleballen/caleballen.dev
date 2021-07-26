@@ -28,6 +28,7 @@
   display: inline-flex;
   padding: 0.5rem 0.5rem 0.5rem 4rem;
   position: sticky;
+  position: -webkit-sticky;
   z-index: 1;
   top:0;
   width: 100%;
@@ -70,10 +71,14 @@
   color: var(--color1)
 }
 
+.parallax-image .caption {
+    position: absolute;
+    width: fit-content;
+}
 
 .background-image {
   position: relative;
-  opacity: 0.65;
+  /* opacity: 0.65; */
   background-attachment: fixed;
   background-position: center;
   background-repeat: none;
@@ -81,7 +86,7 @@
 }
 
 .background-image {
-  height: 80vh;
+  height: 100vh;
   width: 100%;
 }
 

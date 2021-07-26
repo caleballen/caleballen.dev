@@ -13,8 +13,8 @@ const Header = () => (
   <div className="header">
     <HeaderItem text="caleballen.dev" targetSection="" />
     <div className="navigation-section">
-      <HeaderItem text="dab" targetSection="dab" />
-      <HeaderItem text="dab2" targetSection="dab" />
+      <HeaderItem text="link1" targetSection="dab" />
+      <HeaderItem text="link2" targetSection="dab" />
     </div>
   </div>
 );

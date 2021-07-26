@@ -10,10 +10,10 @@ const App = () => (
     <Header />
     <ParallaxImage
       caption="java"
-      text="I wrote some netty code"
+      below="I wrote some netty code"
       image="java-server-code.png"
     />
-    <ParallaxImage id="dab" text="dab" image="coffee.jpg" />
+    <ParallaxImage id="dab" below="dab" image="coffee.jpg" />
   </div>
 );
 
