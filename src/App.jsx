@@ -38,14 +38,23 @@ const App = () => (
       </div>
     </Card>
     <Card>
+      <img src="android-studio.png" alt="Disjoint Set Connected Components Concurrent Programming" />
       <div>
         <h3>
           Android Studio
         </h3>
         <p>talk about android stuff</p>
       </div>
-      <img src="android-studio.png" alt="Disjoint Set Connected Components Concurrent Programming" />
       <img src="minimalist-launcher.png" alt="Disjoint Set Connected Components Concurrent Programming" />
+    </Card>
+    <Card>
+      <div>
+        <h3>
+          linux
+        </h3>
+        <p>talk about android stuff</p>
+      </div>
+      <img src="android-studio.png" alt="Disjoint Set Connected Components Concurrent Programming" />
     </Card>
   </div>
 );

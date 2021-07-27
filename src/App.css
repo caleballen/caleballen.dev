@@ -36,6 +36,11 @@
   color: var(--color1);
 }
 
+.header img {
+  height: calc(10px + 2vmin);
+  color: var(--color1);
+}
+
 .header .navigation-section {
   padding-left: 4rem;
   flex: 1;
@@ -89,3 +94,16 @@
   color: var(--color1);
 }
 
+.fade-in {
+  opacity: 0;
+  /* transform: translateY(20vh); */
+  visibility: hidden;
+  transition: opacity 0.6s ease-out, transform 1.2s ease-out;
+  will-change: opacity, visibility;
+}
+
+.fade-in.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
