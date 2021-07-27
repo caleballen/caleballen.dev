@@ -10,6 +10,16 @@ const App = () => (
   <div className="app">
     <Header />
     <Card>
+      <img src="keyboard.png" alt="Java network system code" />
+      <div>
+        <h3>
+          Full stack experience
+        </h3>
+        <p>I have a year's industry experience working with ReactJS, NodeJS, GraphQL and Docker</p>
+      </div>
+
+    </Card>
+    <Card>
       <div>
         <h3>
           Networking and game-dev
@@ -54,7 +64,7 @@ const App = () => (
         </h3>
         <p>talk about android stuff</p>
       </div>
-      <img src="android-studio.png" alt="Disjoint Set Connected Components Concurrent Programming" />
+      <img src="linux.png" alt="Disjoint Set Connected Components Concurrent Programming" />
     </Card>
   </div>
 );
