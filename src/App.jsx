@@ -5,17 +5,19 @@ import './App.css';
 import React from 'react';
 import Header from './Header';
 import Card from './Card';
+import GameCanvas from './game/GameCanvas.jsx';
 
 const App = () => (
   <div className="app">
     <Header />
+    <GameCanvas />
     <Card>
       <img src="keyboard.png" alt="Java network system code" />
       <div>
         <h3>
           Full stack experience
         </h3>
-        <p>I have a year's industry experience working with ReactJS, NodeJS, GraphQL and Docker</p>
+        <p>I have a year's industry experience working full-stack with ReactJS, NodeJS, GraphQL and Docker</p>
       </div>
 
     </Card>
@@ -34,7 +36,7 @@ const App = () => (
         <h3>
           Machine learning
         </h3>
-        <p>In my studies at Queen's I've completed several <b>artificial intelligence</b> and <b>machine learning</b> based modules, learning how to use machine learning to detect faces in images, detect trends in medical scan data and recognise sentiment in online reviews.</p>
+        <p>In my studies at Queen's I've completed several <b>artificial intelligence</b> and <b>machine learning</b> based modules, learning how to use machine learning to detect faces in images, find trends in medical scan data and recognise sentiment in online reviews.</p>
       </div>
     </Card>
     <Card>
