@@ -32,30 +32,6 @@
 			}
 		}
 	}
-
-	.downArrow {
-		position: absolute;
-		bottom: 64px;
-
-		border: none;
-
-		left: 0;
-		right: 0;
-		margin: 0 auto;
-
-		background-color: transparent;
-		
-		width: 40px;
-		height: 40px;
-		z-index: 2;
-
-		transition: transform 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
-
-		&:hover {
-			transform: scale(150%);
-			cursor: pointer;
-		}
-	}
 }
 
 .dark {
