@@ -2,7 +2,7 @@
 /* eslint-disable max-len */
 /* eslint-disable react/no-unescaped-entities */
 import React, { useRef } from 'react';
-import Section from './components/Section';
+import Section from './components/Section/Section';
 import styles from './App.module.scss';
 
 const App = () => {
@@ -13,7 +13,7 @@ const App = () => {
   return (
     <div className={`container ${styles.container}`}>
       <div ref={section1}>
-        <Section headline="section1" image="/coffee.jpg" goToSectionRef={section2} showArrow />
+        <Section headline="hey, I'm Caleb" goToSectionRef={section2} showArrow theme="light" />
       </div>
       <div ref={section2}>
         <Section headline="section2" image="/linux.png" goToSectionRef={section3} showArrow />
