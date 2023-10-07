@@ -34,8 +34,8 @@ const Section = ({
       <div className={styles.copy}>
         <h2 ref={headlineRef}>{headline}</h2>
       </div>
-      {image && (<img className={styles.image} src={image} />)}
-      {showArrow && (<DownButton goToSectionRef={goToSectionRef} theme={theme}/>)}
+      {image ? <img className={styles.image} src={image} /> : <div className={styles.plain} />}
+      {showArrow && (<DownButton goToSectionRef={goToSectionRef} theme={theme} />)}
     </div>
   );
 };

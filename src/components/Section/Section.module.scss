@@ -1,3 +1,4 @@
+@use "../../colors.scss";
 
 .section {
 	height: 100vh;
@@ -18,6 +19,15 @@
 		width: 100%;
 		height: 100%;
 	}
+	
+	.plain {
+		position: absolute;
+		object-fit: cover;
+		object-position: center;
+		width: 100%;
+		height: 100%;
+		background-color: colors.$color2;
+	}
 
 	.copy {
 		h2 {
@@ -35,13 +45,11 @@
 }
 
 .dark {
-	color: #FFF;
-	fill: #FFF;
-	stroke: #FFF;
+	color: colors.$color2;
+	stroke: colors.$color2;
 }
 
 .light {
-	color: #000;
-	fill: #000;
-	stroke: #000;
+	color: colors.$color6;
+	stroke: colors.$color6;
 }
