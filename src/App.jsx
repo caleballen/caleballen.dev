@@ -4,6 +4,7 @@
 import React, { useRef } from 'react';
 import Section from './components/Section/Section';
 import styles from './App.module.scss';
+import FlyoutDiv from './components/FlyoutDiv/FlyoutDiv';
 
 const App = () => {
   const section1 = useRef();
@@ -13,10 +14,10 @@ const App = () => {
   return (
     <div className={`container ${styles.container}`}>
       <div ref={section1}>
-        <Section headline="hey, I'm Caleb" goToSectionRef={section2} showArrow theme="light" />
+        <Section headline="hi there, I'm Caleb" goToSectionRef={section2} showArrow theme="light"><FlyoutDiv /></Section>
       </div>
       <div ref={section2}>
-        <Section headline="section2" image="/linux.png" goToSectionRef={section3} showArrow />
+        <Section headline="what do i do" goToSectionRef={section3} showArrow theme="dark"><div>dab</div></Section>
       </div>
       <div ref={section3}>
         <Section headline="section3" image="/android-studio.png" />

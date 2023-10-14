@@ -8,12 +8,26 @@ import DownButton from './components/DownButton/DownButton';
 gsap.registerPlugin(ScrollTrigger);
 
 const Section = ({
-  image, headline, goToSectionRef, showArrow, theme,
+  image, headline, goToSectionRef, showArrow, theme, children,
 }) => {
   const headlineRef = useRef();
+  const childrenRef = useRef();
 
   useEffect(() => {
     gsap.fromTo(headlineRef.current, { autoAlpha: 0, y: 40 }, {
+      y: 0,
+      autoAlpha: 1,
+      duration: 1,
+
+      scrollTrigger: {
+        scroller: '.container',
+        trigger: headlineRef.current,
+        start: 'top 60%',
+        end: 'bottom 0%',
+        toggleActions: 'play none restart reverse',
+      },
+    });
+    gsap.fromTo(childrenRef.current, { autoAlpha: 0, y: 40 }, {
       y: 0,
       autoAlpha: 1,
       duration: 1,
@@ -31,10 +45,14 @@ const Section = ({
 
   return (
     <div className={`${theme === 'light' ? styles.light : styles.dark} ${styles.section}`}>
-      <div className={styles.copy}>
+      <div className={styles.content}>
         <h2 ref={headlineRef}>{headline}</h2>
       </div>
-      {image ? <img className={styles.image} src={image} /> : <div className={styles.plain} />}
+      <div className={styles.children} ref={childrenRef}>
+        {children}
+      </div>
+      {image ? <img className={styles.image} src={image} alt={image} />
+        : <div className={styles.plain} />}
       {showArrow && (<DownButton goToSectionRef={goToSectionRef} theme={theme} />)}
     </div>
   );
